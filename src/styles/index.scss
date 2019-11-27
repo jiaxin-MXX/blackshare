@@ -1,0 +1,378 @@
+$val: 120px;
+$dir: top;
+*{margin:0;padding:0}
+ul{list-style: none;}
+img{display: block;}
+a{text-decoration: none}
+h1,h2,h3,h4,h5,h6{font-weight:normal}
+body{
+	//font-size: $val/2;   //变量可以直接进行计算
+	//border-#{$dir} : $val;  //可以使用 #{变量} 的方式拼接字符串
+	//margin-#{$dir} : $val;
+	background: #f4f4f4;
+}
+.header{
+	height: 60px;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 3;
+    width: 100%;
+	min-width: 1200px;
+	.Hcontent{
+		width: 1200px;
+		margin: 0 auto;
+		&::after{
+			content:"";
+			display: block;
+			clear: both;
+		}
+		a{
+			float: left;
+			&::after{
+				content:"";
+				display: block;
+				clear: both;
+			}
+			.logoimg{
+				width: 26px;
+				height: 60px;
+				background: url(https://shop-1256119282.file.myqcloud.com/blackshark/pc-source/resource/img/header/pc_ic_logo@3x.png) center no-repeat;
+				background-size: contain;
+				float: left;
+			}
+			.logoname{
+				line-height: 60px;
+				font-size: 14px;
+				color: #00ec00;
+				margin-left: 8px;
+				vertical-align: middle;
+			}	
+		}
+		.menu-list{
+			
+			float: left;
+			margin-left: 175px;
+			li{
+				float: left;
+				height: 60px;
+				line-height: 60px;
+				vertical-align: middle;
+				font-size: 14px;
+				padding: 0 35px;
+				a{
+					text-decoration: none;
+					color: white;
+					width: 100%;
+					height: 100%;
+					display: block;
+					&:hover{
+						color: #00ec00;
+					}
+				}
+			}
+		}
+		.search{
+			width: 220px;
+			float: left;
+			margin-top: 15px;
+			margin-left: 50px;
+			border-radius: 15px;
+			position: relative;
+			div{
+				width: 100%;
+				height: 30px;
+				border-radius: 15px;
+				overflow: hidden;
+				background: rgba(220,225,228,0.20);
+				input{
+					width: 150px;
+					height: 30px;
+					border-radius: 15px;
+					background: transparent;
+					outline: none;
+					border: none;
+					padding-left: 15px;
+					padding-right: 35px;
+					font-size: 14px;
+					color: rgba(225,225,225,1);
+					position: absolute;
+					top: 0;
+					left: 0;
+				}
+				.searchImg{
+					width: 18px;
+					height: 18px;
+					position: absolute;
+					right: 10px;
+					top: 7px;
+					//cursor: pointer;
+				}
+			}
+		}
+		.userlist{
+			width: 80px;
+			height: 60px;
+			float: right;
+			li{
+				float: left;
+				width: 19px;
+				height: 19px;
+				margin-left:20px;
+				a{
+					width: 19px;
+					height: 19px;
+					display: block;
+					.user{
+						background: url(https://shop-1256119282.file.myqcloud.com/blackshark/pc-source/resource/img/header/ic_user2.png) center no-repeat;
+						height: 19px;
+						margin-top: 25px;
+					}
+					.car{
+						background: url(https://shop-1256119282.file.myqcloud.com/blackshark/pc-source/resource/img/header/ic_shoppingcart.png) center no-repeat;
+						height: 19px;
+						margin-top: 25px;
+					}
+				}
+				
+			}
+		}
+	}
+	
+}
+.swiper-container{
+	height: 680px;
+	background: black;
+	overflow: hidden;
+	.swiper-wrapper{
+		.swiper-slide{
+			width: 100%;
+			overflow: hidden;
+			img{
+				position: absolute;
+				top: 0;
+				left: 50%;
+				transform:translate(-50%, 0);
+				height: 680px;
+			}
+		}
+	} 
+	.swiper-pagination-bullet-active{
+		background: #00ec00 !important;
+	}
+	.swiper-pagination-bullet {
+		margin: 0 13px !important;
+		background: #ccc ;
+	}
+}
+.pro-list{
+	margin: 40px 0 70px;
+	//background: lightsalmon;
+	.content-center-md{
+		width: 1074px;
+		margin: 0 auto;
+		position: relative;
+		p{
+			font-size: 18px;
+			color: #333333;
+			margin-bottom: 20px;
+			padding-left: 10px;
+		}
+		span{
+			width: 55px;
+			height: 21px;
+			position: absolute;
+			top: 0;
+			right: 8px;
+			cursor:Pointer;
+			img{
+				display: block;
+				width: 18px;
+				height: 18px;
+				margin-left: 5px;
+				margin-top: 2px;
+				float: right;
+				transition: transform 2s;
+			}
+		}
+		ul{
+			margin-bottom: 20px;
+			//height: 100%;
+			height: 336px;
+			overflow: hidden;
+			li{
+				width: 25%;
+				height: 336px;
+				float: left;
+				padding: 8px;
+				box-sizing: border-box;
+				cursor: pointer;
+				a{
+					width: 100%;
+					height: 100%;
+					display: block;
+					background-color: white;
+					overflow: hidden;
+					position: relative;
+					h6{
+						padding: 1px 9px;
+						text-align: center;
+						border: 1px solid rgba(0,192,60,0.7);
+						background-color: rgba(0,192,60,0.08);
+						font-size: 12px;
+						font-style: normal;
+						color: #00c03c;
+						position: absolute;
+						top: 20px;
+						left: 20px;
+					}
+					.proImg{
+						width: 140px;
+						height: 140px;
+						margin: 52px auto 0;
+						img{
+							width: 100%;
+    						height: auto;
+						}
+					}
+					.pro-name{
+						font-size: 15px;
+						color: #333333;
+						margin-top: 25px;
+						margin-bottom:0px; 
+						text-align: center;
+						padding: 0 20px 0 20px;
+						white-space: nowrap;
+						text-overflow: ellipsis;
+						overflow: hidden;
+					}
+					.pro-desc{
+						font-size: 13px;
+						color: #999999;
+						margin-top: 2px;
+						margin-bottom:0px; 
+						text-align: center;
+						padding: 0 20px 0 20px;
+						white-space: nowrap;
+						text-overflow: ellipsis;
+						overflow: hidden;
+					}
+					.pro-price{
+						font-size: 15px;
+						color: #00C03C;
+						margin-top: 12px;
+						margin-bottom:0px; 
+						text-align: center;
+					}
+				}
+			}
+		}
+	}
+}
+
+.footer{
+	background-color: white;
+	.content-center-md{
+		width: 1074px;
+		margin: 0 auto;
+		.footer-col{
+			width: 100%;
+			border-bottom: 1px solid #E7E7E7;
+			display: inline-block;
+			position: relative;
+			text-align: center;
+			&:nth-child(3){
+				border:none
+			}
+			.footer-banner{
+				width: 100%;
+				li{
+					width: 33.3333333333%;
+					float: left;
+					text-align: center;
+					padding: 50px 0;
+					.icon{
+						width: 38px;
+						height: 38px;
+						margin: auto;
+						display: block;
+						float: none;
+					}
+					.icon-sevenday{
+						background: url(../static/images/sevenday.png) center no-repeat;
+    					background-size: contain;
+					}
+					.icon-fifteenday{
+						background: url(../static/images/fifteenday.png) center no-repeat;;
+    					background-size: contain;
+					}
+					.icon-postage{
+						background: url(../static/images/postage.png) center no-repeat;
+    					background-size: contain;
+					}
+					p{
+						font-size: 13px;
+						color: #999999;
+						margin-top: 9px;
+					}
+				}
+			}
+			dl{
+				text-align: left;
+				margin: 40px 150px 40px 150px;
+				display: inline-block;
+				dt{
+					font-size: 13px;
+					color: #333333;
+					margin-bottom: 18px;
+				}
+				dd{
+					font-size: 13px;
+					color: #333333;
+					margin-bottom: 18px;
+					a{
+						color: #999999;
+						&:hover{
+							color: #00ec00;
+						}
+					}
+					.animate-duration-ms{
+						transition-duration: 0.4s;
+					}
+				}
+				.phone{
+					text-decoration: none;
+					color: #333333;
+					font-size: 20px;
+				}
+			}
+			.copyright{
+				font-size: 12px;
+				color: #999999;
+				float: left;
+				margin: 20px 20.7% 20px 0;
+			}
+			.attention{
+				float: right;
+				font-size: 12px;
+				margin: 20px 0;
+				color: #999999;
+				span{
+					vertical-align: middle;
+					display: inline-block;
+    				margin-top: -10px;
+				}
+				a{
+					img{
+						width: 18px;
+						height: 18px;
+						font-size: 0px;
+						display: inline-block;
+					}
+				}
+			}
+		}
+	}
+}
+
+

@@ -1,0 +1,296 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+body {
+  background: #f4f4f4;
+}
+
+.header {
+  height: 60px;
+  top: 0;
+  background-color: black;
+  z-index: 3;
+  width: 100%;
+  min-width: 1200px;
+}
+
+.header .Hcontent {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.header .Hcontent::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.header .Hcontent a {
+  float: left;
+}
+
+.header .Hcontent a::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.header .Hcontent a .logoimg {
+  width: 26px;
+  height: 60px;
+  background: url(https://shop-1256119282.file.myqcloud.com/blackshark/pc-source/resource/img/header/pc_ic_logo@3x.png) center no-repeat;
+  background-size: contain;
+  float: left;
+}
+
+.header .Hcontent a .logoname {
+  line-height: 60px;
+  font-size: 14px;
+  color: #00ec00;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+.content {
+  background-color: #f4f4f4;
+  overflow: hidden;
+}
+
+.content .content-center {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.content .content-center:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.content .content-center .block {
+  width: 100%;
+  height: 720px;
+  background-color: white;
+  margin-top: 75px;
+  overflow: hidden;
+}
+
+.content .content-center .block .header {
+  font-size: 24px;
+  margin: 60px 0 51px;
+  text-align: center;
+  background-color: white;
+}
+
+.content .content-center .block .body {
+  width: 445px;
+  margin: 0 auto;
+}
+
+.content .content-center .block .body .form {
+  width: 100%;
+  position: relative;
+}
+
+.content .content-center .block .body .form .form-group .form-control {
+  width: 100%;
+  height: 65px;
+  font-size: 16px;
+  color: #666666;
+  padding: 13px 18px;
+  box-sizing: border-box;
+  border: 1px solid #DCE1E4;
+  border-radius: 3px;
+  margin: 0 0 20px 0;
+  vertical-align: middle;
+}
+
+.content .content-center .block .body .login-btn {
+  float: right;
+  color: #666666;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.content .content-center .block .body .btn-col {
+  margin-top: 67px;
+}
+
+.content .content-center .block .body .btn-col .btn-l {
+  margin-top: 32px;
+  width: 100%;
+  height: 65px;
+  border-radius: 3px;
+  text-align: center;
+  line-height: 65px;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  border: none;
+}
+
+.content .content-center .block .body .btn-col .btn-green {
+  background-color: #00C03C;
+}
+
+.content .content-center .block .body .agreement-col {
+  font-size: 14px;
+  margin-top: 15px;
+  color: #999999;
+}
+
+.content .content-center .block .body .agreement-col .checkboxCol {
+  margin: 0 25px 0 0;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.content .content-center .block .body .agreement-col .checkboxCol .icon-select-col {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  border: 1px solid #DCE1E4;
+  margin-bottom: 0;
+  overflow: hidden;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.content .content-center .block .body .agreement-col .checkboxCol .icon-select-col .icon-select {
+  width: 12px;
+  height: 8px;
+  background-size: contain;
+  color: green;
+  font-weight: 900;
+  display: block;
+}
+
+.content .content-center .block .body .agreement-col .checkboxCol span {
+  vertical-align: middle;
+}
+
+.content .content-center .block .body .agreement-col .checkboxCol span a {
+  color: #999999;
+  text-decoration: none;
+}
+
+.footer {
+  width: 100%;
+  height: 80px;
+  text-align: center;
+}
+
+.footer .content-center {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.footer .content-center:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.footer .content-center .copyright {
+  font-size: 12px;
+  color: #999999;
+  line-height: 80px;
+}
+
+.flavr-container .flavr-overlay {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  visibility: inherit;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.flavr-container .flavr-fixer {
+  position: fixed;
+  width: auto;
+  top: 50%;
+  left: 50%;
+  transform-origin: 0% 0%;
+  transform: rotateX(90deg) translate(-50%, -50%);
+  transition: 1s;
+}
+
+.flavr-container .flavr-fixer .flavr-outer {
+  background: #fff;
+  min-width: 300px;
+  height: auto;
+  text-align: center;
+  font-family: Helvetica,Arial,sans-serif;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+}
+
+.flavr-container .flavr-fixer .flavr-outer .flavr-content {
+  font-size: 14px;
+  color: #606060;
+  padding: 40px 30px 40px;
+}
+
+.flavr-container .flavr-fixer .flavr-outer .flavr-content .flavr-title {
+  margin: 0;
+  margin-bottom: 6px;
+  font-size: 1.3em;
+  line-height: 1.5;
+}
+
+.flavr-container .flavr-fixer .flavr-outer .flavr-content .flavr-message {
+  margin-top: 6px;
+  color: #666;
+  line-height: 1.5;
+}
+
+.flavr-container .flavr-fixer .flavr-outer .flavr-toolbar {
+  white-space: nowrap;
+  padding: 0 30px 20px;
+}
+
+.flavr-container .flavr-fixer .flavr-outer .flavr-toolbar .flavr-button {
+  display: inline-block;
+  width: auto;
+  min-width: 120px;
+  margin-left: 6px;
+  margin-top: 2px;
+  padding: 7px 12px;
+  border-radius: 5px;
+  color: white;
+}
+
+.flavr-container .flavr-fixer .flavr-outer .flavr-toolbar .active {
+  background-color: #00c03c;
+}
+
+.shown {
+  display: block;
+}

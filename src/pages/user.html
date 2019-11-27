@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>购物车</title>
+    <link rel="stylesheet" type="text/css" href="../styles/user.css"/>
+</head>
+<body>
+    <div class="header">
+                <div class="Hcontent">
+                    <div class="logo">
+                        <a href="#">
+                            <img class="logoimg" src="" alt="">
+                            <span class="logoname">黑鲨商城</span>
+                        </a>
+                    </div>
+                    <div class="menu-list">
+                        <ul>
+                            <li><a href="index.html">商城</a></li>
+                            <li><a href="https://m.10010.com/scaffold-show/blackshark?channel=04-1225-1333-9999">游戏加速</a></li>
+                            <li><a href="#">以旧换新</a></li>
+                            <li><a href="#">服务</a></li>
+                            <li><a href="#">社区</a></li>
+                        </ul>
+                    </div>
+                    <div class="search">
+                        <div>
+                            <input placeholder="搜索" type="text">
+                            <img class="searchImg" src="https://shop-1256119282.file.myqcloud.com/blackshark/pc-source/resource/img/header/search.png" alt="">
+                        </div>
+                    </div>
+                    <div class="userlist">
+                        <ul>
+                            <li><a href="login.html">
+                                <div class="user"></div>
+                            </a></li>
+                            <li><a href="#">
+                                <div class="car"></div>
+                            </a></li>
+                        </ul>
+                    </div>
+                </div>
+    </div>
+    <section class="content">
+            <article class="cart">
+                <div class="content-center">
+                    <div class="block" id="cartFull" style="display: block;">
+                        <div class="cart-top">
+                            <p class="title">我的购物车</p>
+                            <table border="0" cellpadding="0" cellspacing="0">
+                                <thead>
+                                <tr>
+                                    <th class="t-l" width="188">
+                                        <input type="checkbox" id="select-all" value="1" checked="" name="pro-select" style="display: none;">
+                                        <label for="select-all" class="checkboxCol">
+                                            <div class="icon-select-col">
+                                                <i class="icon-select animate-common" index='1'></i>
+                                            </div>
+                                            <span>全选</span>
+                                        </label>
+                                    </th>
+                                    <th class="t-l" width="316" colspan="2">商品名称</th>
+                                    <th width="134">数量</th>
+                                    <th width="134">单价</th>
+                                    <th width="134">状态</th>
+                                    <th width="134">操作</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- <tr><td class="t-l" width="188"><input type="checkbox" id="select-0" value="1" checked="" name="sex" data-skusn="K19091229835_2" data-count="1" data-price="3999" style="display: none;"><label for="select-0" class="checkboxCol active"><div class="icon-select-col"><i class="icon-select animate-common"></i></div><span></span></label></td><td width="70"><div class="img-col"><img src="https://shop-1256119282.file.myqcloud.com/blackshark/20190912/20190912083052_463.jpg"></div></td><td width="246"><p class="pro-name">黑鲨游戏手机2 Pro</p><p class="pro-desc">12GB+512GB,冰魄灰</p></td><td width="134"><div class="sel-num"><button class="reduce-num" id="reduce0">-</button><i class="num">1</i><button class="add-num" id="add0">+</button></div></td><td width="134">￥3999</td><td width="134">待付款</td><td width="134"><i class="fa fa-trash-o">X</i></td></tr> -->
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="cart-bottom">
+                            <div class="cart-bottom-left">
+                                <a href="index.html">
+                                    <i class="fa fa-shopping-cart"></i>
+                                    <span>继续购物</span>
+                                </a>
+                            </div>
+                            <div class="cart-bottom-right">
+                                共<span class="total-num" id="count-all">1</span>件商品，已选<span class="total-num" id="count-select">0</span>件，合计：<span class="total-price">￥0</span>
+                                <div class="btn-l btn-green animate-common animate-duration-ms" id="pay">去结算</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block" id="cartEmpty" style="display: none; margin-bottom: 120px;">
+                        <div class="cartNone-col">
+                            <!--<img src="https://shop-1256119282.file.myqcloud.com/blackshark/pc-source/resource/img/cart/cart-none.svg">-->
+                            <p>购物车竟然是空的，快去添加吧</p>
+                            <div class="btn-l btn-green animate-common animate-duration-ms" id="goStore" style="margin-top: 56px;">去商城</div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+    </section>
+    <div class="footer">
+			<div class="content-center-md">
+				<div class="footer-col">
+					<ul class="footer-banner">
+						<li>
+							<i class="icon icon-sevenday"></i>
+							<p>七天无理由退款</p>
+						</li>
+						<li>
+							<i class="icon icon-fifteenday"></i>
+							<p>质量问题15天换货</p>
+						</li>
+						<li>
+							<i class="icon icon-postage"></i>
+							<p>满99元包邮</p>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<dl>
+						<dt>相关链接</dt>
+						<dd><a class="animate-duration-ms" href="#">黑鲨官网</a></dd>
+						<dd><a class="animate-duration-ms" href="#">黑鲨论坛</a></dd>
+						<dd><a class="animate-duration-ms" href="#">黑鲨云服务</a></dd>
+					</dl>
+					<dl>
+						<dt>黑鲨客服热线</dt>
+						<dd class="phone">400-015-8899</dd>
+						<dd>产品咨询、技术支持及相关问题</dd>
+						<dd>09：00 ~ 24：00</dd>
+					</dl>
+				</div>
+				<div class="footer-col">
+					<div class="copyright">Copyright © 2017-2018  BlackShark 赣ICP备17012659号. All Rights Reserved.</div>
+					<div class="attention">
+						<span>关注我们：</span>
+						<a class="animate-common animate-duration-ms" href="//weibo.com/u/6138051145" target="_blank">
+							<img src="../static/images/weibo.png" alt="">
+						</a>
+					</div>
+				</div>
+			</div>
+    </div>
+    <div class="flavr-container modal center shown">
+        <div class="flavr-overlay"></div>
+        <div class="flavr-fixer">
+            <div class="flavr-outer">
+                <div class="flavr-content">
+                    <h1 class="flavr-title"></h1>
+                    <div class="flavr-message"></div>
+                </div>
+                <div class="flavr-toolbar inline">
+                    <a href="#" class="flavr-button active" rel="btn-close">确定</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../scripts/scripts/require.js" data-main="user.js" type="text/javascript" charset="utf-8"></script>
+</html>

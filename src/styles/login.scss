@@ -1,0 +1,275 @@
+*{margin:0;padding:0}
+ul{list-style: none;}
+img{display: block;}
+a{text-decoration: none}
+h1,h2,h3,h4,h5,h6{font-weight:normal}
+body{
+	//font-size: $val/2;   //变量可以直接进行计算
+	//border-#{$dir} : $val;  //可以使用 #{变量} 的方式拼接字符串
+	//margin-#{$dir} : $val;
+	background: #f4f4f4;
+}
+.header{
+	height: 60px;
+    //position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 1);
+    z-index: 3;
+    width: 100%;
+	min-width: 1200px;
+	.Hcontent{
+		width: 1200px;
+		margin: 0 auto;
+		&::after{
+			content:"";
+			display: block;
+			clear: both;
+		}
+		a{
+			float: left;
+			&::after{
+				content:"";
+				display: block;
+				clear: both;
+			}
+			.logoimg{
+				width: 26px;
+				height: 60px;
+				background: url(https://shop-1256119282.file.myqcloud.com/blackshark/pc-source/resource/img/header/pc_ic_logo@3x.png) center no-repeat;
+				background-size: contain;
+				float: left;
+			}
+			.logoname{
+				line-height: 60px;
+				font-size: 14px;
+				color: #00ec00;
+				margin-left: 8px;
+				vertical-align: middle;
+			}	
+		}
+	}
+	
+}
+.content {
+    background-color: #f4f4f4;
+    overflow: hidden;
+}
+.main-bg {
+    width: 100%;
+    height: 680px;
+    background: url(https://shop-1256119282.file.myqcloud.com/blackshark/pass-source/resources/login/img/login_back.jpg) center;
+    background-size: 100% 100%;
+    .content-center {
+        width: 1200px;
+        margin: 0 auto;
+        &:after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .block{
+            .login{
+                width: 432px;
+                height: 501px;
+                margin-top: 75px;
+                background-color: white;
+                float: right;
+                padding: 0 31px 0;
+                box-sizing: border-box;
+                .title {
+                    width: 100%;
+                    font-size: 24px;
+                    color: #333333;
+                    text-align: center;
+                    margin: 22px 0 28px;
+                }
+                .form {
+                    width: 100%;
+                    position: relative;
+                    .form-group{
+                        .form-control {
+                            width: 100%;
+                            height: 50px;
+                            font-size: 16px;
+                            color: #666666;
+                            padding: 13px 18px;
+                            box-sizing: border-box;
+                            border: 1px solid #DCE1E4;
+                            border-radius: 3px;
+                            margin: 0 0 18px 0;
+                        }
+                    }
+                }
+                .btn-col{
+                    .btn-l{
+                        margin-top: 32px;
+                        width: 100%;
+                        height: 50px;
+                        border-radius: 3px;
+                        text-align: center;
+                        line-height: 50px;
+                        color: white;
+                        font-size: 18px;
+                        cursor: pointer;
+                    }
+                    .btn-green {
+                        background-color: #00C03C;
+                    }
+                }
+                .tool-bar{
+                    margin-top: 10px;
+                    .tool-bar-left{
+                        width: 50%;
+                        float: left;
+                        text-align: left;
+                        font-size: 14px;
+                        color: #00c03c;
+                    }
+                    .tool-bar-right {
+                        width: 50%;
+                        float: left;
+                        text-align: right;
+                        a{
+                            font-size: 14px;
+                            color: #666666;
+                            text-decoration: none;
+                            position: relative;
+                        }
+                    }
+                }
+                .login-other{
+                    width: 100%;
+                    text-align: center;
+                    margin-top: 75px;
+                    .title {
+                        font-size: 12px;
+                        color: #999999;
+                    }
+                    .login-item-list{
+                        margin-top: 13px;
+                        text-align: center;
+                        .login-item {
+                            width: 28px;
+                            height: 28px;
+                            display: inline-block;
+                            margin-left: 7px;
+                            margin-right: 7px;
+                            border-radius: 50%;
+                            background-color: #999999;
+                            cursor: pointer;
+                            &:nth-of-type(1){
+                                background: url(https://shop-1256119282.file.myqcloud.com/blackshark/pass-source/resources/login/img/qq.svg) center no-repeat;
+                                background-size: contain;
+                            }
+                            &:nth-of-type(2){
+                                background: url(https://shop-1256119282.file.myqcloud.com/blackshark/pass-source/resources/login/img/wechat.svg) center no-repeat;
+                                background-size: contain;
+                            }
+                            &:nth-of-type(3){
+                                background: url(https://shop-1256119282.file.myqcloud.com/blackshark/pass-source/resources/login/img/alipay.svg) center no-repeat;
+                                background-size: contain;
+                            }
+                            &:nth-of-type(4){
+                                background: url(https://shop-1256119282.file.myqcloud.com/blackshark/pass-source/resources/login/img/weibo.svg) center no-repeat;
+                                background-size: contain;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.footer {
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    .content-center {
+        width: 1200px;
+        margin: 0 auto;
+        &:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .copyright {
+            font-size: 12px;
+            color: #999999;
+            line-height: 80px;
+        }
+    }
+}
+.flavr-container{
+    .flavr-overlay{
+        // position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        visibility: inherit;
+        background: rgba(0,0,0,0.4);
+    } 
+    .flavr-fixer{
+        position: fixed;
+        // display: block;
+        width: auto;
+        top: 50%;
+        left: 50%;
+        transform-origin:0% 0%;
+        transform:rotateX(90deg) translate(-50%, -50%);
+        transition: 1s;
+        //translate: 3s;
+        .flavr-outer {
+            background: #fff;
+            min-width: 300px;
+            height: auto;
+            text-align: center;
+            font-family: Helvetica,Arial,sans-serif;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+            -webkit-background-clip: padding-box;
+            -moz-background-clip: padding-box;
+            background-clip: padding-box;
+            -webkit-box-shadow: 0 2px 4px 0 rgba(0,0,0,0.3);
+            -moz-box-shadow: 0 2px 4px 0 rgba(0,0,0,0.3);
+            box-shadow: 0 2px 4px 0 rgba(0,0,0,0.3);
+            .flavr-content {
+                font-size: 14px;
+                color: #606060;
+                padding: 40px 30px 40px;
+                .flavr-title {
+                    margin: 0;
+                    margin-bottom: 6px;
+                    font-size: 1.3em;
+                    line-height: 1.5;
+                }
+                .flavr-message {
+                    margin-top: 6px;
+                    color: #666;
+                    line-height: 1.5;
+                }
+            }
+            .flavr-toolbar {
+                white-space: nowrap;
+                padding: 0 30px 20px;
+                .flavr-button {
+                    display: inline-block;
+                    width: auto;
+                    min-width: 120px;
+                    margin-left: 6px;
+                    margin-top: 2px;
+                    padding: 7px 12px;
+                    border-radius: 5px;
+                    color: white
+                }
+                .active {
+                    background-color: #00c03c;
+                }
+            }
+        }
+    } 
+}
+.shown {
+    display: block;
+}

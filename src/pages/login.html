@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录</title>
+    <link rel="stylesheet" type="text/css" href="../styles/login.css"/>
+</head>
+<body>
+    <div class="header">
+        <div class="Hcontent">
+            <div class="logo">
+                <a href="#">
+                    <img class="logoimg" src="" alt="">
+                    <span class="logoname">黑鲨商城</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <section class="content main-bg">
+        <div class="content-center">
+            <div class="block">
+                <div class="login">
+                    <p class="title">账号登录</p>
+                    <div class="form">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="mobile" maxlength="11" placeholder="请输入用户名">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="passwd" placeholder="请输入密码">
+                        </div>
+                    </div>
+                    <div class="btn-col">
+                        <div class="btn-l btn-green" id="login-btn">登录</div>
+                    </div>
+                    <div class="tool-bar">
+                        <div class="tool-bar-left">
+                            <a data-logintype="/xiaomi/auth">小米登录</a>
+                        </div>
+                        <div class="tool-bar-right">
+                            <a href="zhuce.html" id="reg" target="_self">立即注册</a>
+                            <a href="#" target="_self">忘记密码</a>
+                        </div>
+                    </div>
+                    <div class="login-other">
+                        <p class="title">其他登陆方式</p>
+                        <div class="login-item-list">
+                            <a class="login-item icon-qq"></a>
+                            <a class="login-item icon-wechat"></a>
+                            <a class="login-item icon-alipay"></a>
+                            <a class="login-item icon-weibo"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="footer">
+        <div class="content-center">
+            <div class="copyright">
+                <p>Copyright © 2017-2018  BlackShark 赣ICP备17012659号. All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+    <div class="flavr-container modal center shown">
+            <div class="flavr-overlay"></div>
+            <div class="flavr-fixer">
+                <div class="flavr-outer">
+                    <div class="flavr-content">
+                        <h1 class="flavr-title"></h1>
+                        <div class="flavr-message">手机号不能为空</div>
+                    </div>
+                    <div class="flavr-toolbar inline">
+                        <a href="#" class="flavr-button active" rel="btn-close">确定</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+<script src="../scripts/scripts/require.js" data-main="login.js" type="text/javascript" charset="utf-8"></script>
+</html>

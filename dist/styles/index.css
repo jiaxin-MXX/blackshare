@@ -1,0 +1,437 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+body {
+  background: #f4f4f4;
+}
+
+.header {
+  height: 60px;
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 3;
+  width: 100%;
+  min-width: 1200px;
+}
+
+.header .Hcontent {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.header .Hcontent::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.header .Hcontent a {
+  float: left;
+}
+
+.header .Hcontent a::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.header .Hcontent a .logoimg {
+  width: 26px;
+  height: 60px;
+  background: url(https://shop-1256119282.file.myqcloud.com/blackshark/pc-source/resource/img/header/pc_ic_logo@3x.png) center no-repeat;
+  background-size: contain;
+  float: left;
+}
+
+.header .Hcontent a .logoname {
+  line-height: 60px;
+  font-size: 14px;
+  color: #00ec00;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+.header .Hcontent .menu-list {
+  float: left;
+  margin-left: 175px;
+}
+
+.header .Hcontent .menu-list li {
+  float: left;
+  height: 60px;
+  line-height: 60px;
+  vertical-align: middle;
+  font-size: 14px;
+  padding: 0 35px;
+}
+
+.header .Hcontent .menu-list li a {
+  text-decoration: none;
+  color: white;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.header .Hcontent .menu-list li a:hover {
+  color: #00ec00;
+}
+
+.header .Hcontent .search {
+  width: 220px;
+  float: left;
+  margin-top: 15px;
+  margin-left: 50px;
+  border-radius: 15px;
+  position: relative;
+}
+
+.header .Hcontent .search div {
+  width: 100%;
+  height: 30px;
+  border-radius: 15px;
+  overflow: hidden;
+  background: rgba(220, 225, 228, 0.2);
+}
+
+.header .Hcontent .search div input {
+  width: 150px;
+  height: 30px;
+  border-radius: 15px;
+  background: transparent;
+  outline: none;
+  border: none;
+  padding-left: 15px;
+  padding-right: 35px;
+  font-size: 14px;
+  color: #e1e1e1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.header .Hcontent .search div .searchImg {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  right: 10px;
+  top: 7px;
+}
+
+.header .Hcontent .userlist {
+  width: 80px;
+  height: 60px;
+  float: right;
+}
+
+.header .Hcontent .userlist li {
+  float: left;
+  width: 19px;
+  height: 19px;
+  margin-left: 20px;
+}
+
+.header .Hcontent .userlist li a {
+  width: 19px;
+  height: 19px;
+  display: block;
+}
+
+.header .Hcontent .userlist li a .user {
+  background: url(https://shop-1256119282.file.myqcloud.com/blackshark/pc-source/resource/img/header/ic_user2.png) center no-repeat;
+  height: 19px;
+  margin-top: 25px;
+}
+
+.header .Hcontent .userlist li a .car {
+  background: url(https://shop-1256119282.file.myqcloud.com/blackshark/pc-source/resource/img/header/ic_shoppingcart.png) center no-repeat;
+  height: 19px;
+  margin-top: 25px;
+}
+
+.swiper-container {
+  height: 680px;
+  background: black;
+  overflow: hidden;
+}
+
+.swiper-container .swiper-wrapper .swiper-slide {
+  width: 100%;
+  overflow: hidden;
+}
+
+.swiper-container .swiper-wrapper .swiper-slide img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  height: 680px;
+}
+
+.swiper-container .swiper-pagination-bullet-active {
+  background: #00ec00 !important;
+}
+
+.swiper-container .swiper-pagination-bullet {
+  margin: 0 13px !important;
+  background: #ccc;
+}
+
+.pro-list {
+  margin: 40px 0 70px;
+}
+
+.pro-list .content-center-md {
+  width: 1074px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.pro-list .content-center-md p {
+  font-size: 18px;
+  color: #333333;
+  margin-bottom: 20px;
+  padding-left: 10px;
+}
+
+.pro-list .content-center-md span {
+  width: 55px;
+  height: 21px;
+  position: absolute;
+  top: 0;
+  right: 8px;
+  cursor: Pointer;
+}
+
+.pro-list .content-center-md span img {
+  display: block;
+  width: 18px;
+  height: 18px;
+  margin-left: 5px;
+  margin-top: 2px;
+  float: right;
+  transition: transform 2s;
+}
+
+.pro-list .content-center-md ul {
+  margin-bottom: 20px;
+  height: 336px;
+  overflow: hidden;
+}
+
+.pro-list .content-center-md ul li {
+  width: 25%;
+  height: 336px;
+  float: left;
+  padding: 8px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.pro-list .content-center-md ul li a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: white;
+  overflow: hidden;
+  position: relative;
+}
+
+.pro-list .content-center-md ul li a h6 {
+  padding: 1px 9px;
+  text-align: center;
+  border: 1px solid rgba(0, 192, 60, 0.7);
+  background-color: rgba(0, 192, 60, 0.08);
+  font-size: 12px;
+  font-style: normal;
+  color: #00c03c;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.pro-list .content-center-md ul li a .proImg {
+  width: 140px;
+  height: 140px;
+  margin: 52px auto 0;
+}
+
+.pro-list .content-center-md ul li a .proImg img {
+  width: 100%;
+  height: auto;
+}
+
+.pro-list .content-center-md ul li a .pro-name {
+  font-size: 15px;
+  color: #333333;
+  margin-top: 25px;
+  margin-bottom: 0px;
+  text-align: center;
+  padding: 0 20px 0 20px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.pro-list .content-center-md ul li a .pro-desc {
+  font-size: 13px;
+  color: #999999;
+  margin-top: 2px;
+  margin-bottom: 0px;
+  text-align: center;
+  padding: 0 20px 0 20px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.pro-list .content-center-md ul li a .pro-price {
+  font-size: 15px;
+  color: #00C03C;
+  margin-top: 12px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.footer {
+  background-color: white;
+}
+
+.footer .content-center-md {
+  width: 1074px;
+  margin: 0 auto;
+}
+
+.footer .content-center-md .footer-col {
+  width: 100%;
+  border-bottom: 1px solid #E7E7E7;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+}
+
+.footer .content-center-md .footer-col:nth-child(3) {
+  border: none;
+}
+
+.footer .content-center-md .footer-col .footer-banner {
+  width: 100%;
+}
+
+.footer .content-center-md .footer-col .footer-banner li {
+  width: 33.3333333333%;
+  float: left;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.footer .content-center-md .footer-col .footer-banner li .icon {
+  width: 38px;
+  height: 38px;
+  margin: auto;
+  display: block;
+  float: none;
+}
+
+.footer .content-center-md .footer-col .footer-banner li .icon-sevenday {
+  background: url(../static/images/sevenday.png) center no-repeat;
+  background-size: contain;
+}
+
+.footer .content-center-md .footer-col .footer-banner li .icon-fifteenday {
+  background: url(../static/images/fifteenday.png) center no-repeat;
+  background-size: contain;
+}
+
+.footer .content-center-md .footer-col .footer-banner li .icon-postage {
+  background: url(../static/images/postage.png) center no-repeat;
+  background-size: contain;
+}
+
+.footer .content-center-md .footer-col .footer-banner li p {
+  font-size: 13px;
+  color: #999999;
+  margin-top: 9px;
+}
+
+.footer .content-center-md .footer-col dl {
+  text-align: left;
+  margin: 40px 150px 40px 150px;
+  display: inline-block;
+}
+
+.footer .content-center-md .footer-col dl dt {
+  font-size: 13px;
+  color: #333333;
+  margin-bottom: 18px;
+}
+
+.footer .content-center-md .footer-col dl dd {
+  font-size: 13px;
+  color: #333333;
+  margin-bottom: 18px;
+}
+
+.footer .content-center-md .footer-col dl dd a {
+  color: #999999;
+}
+
+.footer .content-center-md .footer-col dl dd a:hover {
+  color: #00ec00;
+}
+
+.footer .content-center-md .footer-col dl dd .animate-duration-ms {
+  transition-duration: 0.4s;
+}
+
+.footer .content-center-md .footer-col dl .phone {
+  text-decoration: none;
+  color: #333333;
+  font-size: 20px;
+}
+
+.footer .content-center-md .footer-col .copyright {
+  font-size: 12px;
+  color: #999999;
+  float: left;
+  margin: 20px 20.7% 20px 0;
+}
+
+.footer .content-center-md .footer-col .attention {
+  float: right;
+  font-size: 12px;
+  margin: 20px 0;
+  color: #999999;
+}
+
+.footer .content-center-md .footer-col .attention span {
+  vertical-align: middle;
+  display: inline-block;
+  margin-top: -10px;
+}
+
+.footer .content-center-md .footer-col .attention a img {
+  width: 18px;
+  height: 18px;
+  font-size: 0px;
+  display: inline-block;
+}

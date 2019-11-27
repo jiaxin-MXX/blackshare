@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../styles/show.css"/>
+</head>
+<body>
+    <div class="header">
+                <div class="Hcontent">
+                    <div class="logo">
+                        <a href="#">
+                            <img class="logoimg" src="" alt="">
+                            <span class="logoname">黑鲨商城</span>
+                        </a>
+                    </div>
+                    <div class="menu-list">
+                        <ul>
+                            <li><a href="index.html">商城</a></li>
+                            <li><a href="#">游戏加速</a></li>
+                            <li><a href="#">以旧换新</a></li>
+                            <li><a href="#">服务</a></li>
+                            <li><a href="#">社区</a></li>
+                        </ul>
+                    </div>
+                    <!-- <div class="search">
+                        <div>
+                            <input placeholder="搜索" type="text">
+                            <img class="searchImg" src="https://shop-1256119282.file.myqcloud.com/blackshark/pc-source/resource/img/header/search.png" alt="">
+                        </div>
+                    </div> -->
+                    <div class="userlist">
+                        <ul>
+                            <li><a href="login.html">
+                                <div class="user"></div>
+                            </a></li>
+                            <li><a href="#">
+                                <div class="car"></div>
+                            </a></li>
+                        </ul>
+                    </div>
+                </div>
+    </div>
+    <div class="content">
+        <div class="proinfo">
+            <div class="content-center">
+                <div class="img-list" style="position: absolute; top: 0px;">
+                    <div class="big-img">
+                            <img class="Zimg" src="" alt="">
+                    </div>
+                    <div class="small-img">
+                        <button class="arrow arrow-left">
+                            <i class="fa fa-angle-left"></i>
+                        </button>
+                        <button class="arrow arrow-right">
+                            <i class="fa fa-angle-right"></i>
+                        </button>
+                        <div class="listbox">
+                            <ul class="listboxImg">
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="property-list">
+                    <div class="pro-name"></div>
+                    <span class="pro-slogan"></span>
+                    <div class="pro-act" style=""><div class="act-item"><span class="act-name"></span><span class="act-desc"></span></div></div>
+                    <div class="pro-price">
+                        <span id="pricePre" style="display: none;"></span>
+                        <span id="priceOld" style=""></span>
+                        <span id="priceNow" style="color: rgb(0, 192, 60);"></span>
+                    </div>
+                    <div class="pro-choose">
+                        <div class="attr"></div>
+                        <div class="num">
+                            <div class="pro-choose-item">
+                                <div class="pro-choose-name">数量</div>
+                                <div class="pro-choose-content">
+                                    <div class="sel-num">
+                                        <button class="reduce-num">-</button>
+                                        <i class="num">1</i>
+                                        <button class="add-num">+</button>
+                                    </div>
+                                    <!-- <span class="surplus" style="display: none;">仅剩<i>5</i>件</span> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div id="goumaixuzhi" style="margin-top: 20px; color: #333;"></div>
+                    </div>
+                    <div class="button-col">
+                        <button class="btn btn-black" id="cart" style="">加入购物车</button>
+                        <button class="btn btn-green animate-common animate-duration-ms" id="pay">立即购买</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="content-center-md">
+            <div class="footer-col">
+                <ul class="footer-banner">
+                    <li>
+                        <i class="icon icon-sevenday"></i>
+                        <p>七天无理由退款</p>
+                    </li>
+                    <li>
+                        <i class="icon icon-fifteenday"></i>
+                        <p>质量问题15天换货</p>
+                    </li>
+                    <li>
+                        <i class="icon icon-postage"></i>
+                        <p>满99元包邮</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <dl>
+                    <dt>相关链接</dt>
+                    <dd><a class="animate-duration-ms" href="#">黑鲨官网</a></dd>
+                    <dd><a class="animate-duration-ms" href="#">黑鲨论坛</a></dd>
+                    <dd><a class="animate-duration-ms" href="#">黑鲨云服务</a></dd>
+                </dl>
+                <dl>
+                    <dt>黑鲨客服热线</dt>
+                    <dd class="phone">400-015-8899</dd>
+                    <dd>产品咨询、技术支持及相关问题</dd>
+                    <dd>09：00 ~ 24：00</dd>
+                </dl>
+            </div>
+            <div class="footer-col">
+                <div class="copyright">Copyright © 2017-2018  BlackShark 赣ICP备17012659号. All Rights Reserved.</div>
+                <div class="attention">
+                    <span>关注我们：</span>
+                    <a class="animate-common animate-duration-ms" href="//weibo.com/u/6138051145" target="_blank">
+                        <img src="../static/images/weibo.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="flavr-container modal center shown">
+        <div class="flavr-overlay"></div>
+        <div class="flavr-fixer">
+            <div class="flavr-outer">
+                <div class="flavr-content">
+                    <h1 class="flavr-title"></h1>
+                    <div class="flavr-message">手机号不能为空</div>
+                </div>
+                <div class="flavr-toolbar inline">
+                    <a href="#" class="flavr-button active" rel="btn-close">确定</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../scripts/scripts/require.js" data-main="show.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
